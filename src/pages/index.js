@@ -12,10 +12,18 @@ const PageTransistionWrapper = (props) => {
           border: '1px solid red',
           margin: '30px 15px',
           display: 'block',
-
+          opacity: '1',
+          backgroundImage: `url(${props.panelImage})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          height: '500px',
         }}
         transitionStyles={{
-          exiting: { width: '100%', margin: '30px 0px' },
+          exiting: { 
+            width: '100%', 
+            margin: '30px 0px',
+            backgroundImage: ''
+          },
         }}
         transitionTime={1000}
         >
@@ -32,9 +40,17 @@ const PageTransistionWrapper = (props) => {
         margin: '30px 15px',
         opacity: '1',
         display: 'block',
+        backgroundImage: `url(${props.panelImage})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        height: '500px',
       }}
       transitionStyles={{
-        exiting: { width: '0%', opacity: '0', margin: '0px' },
+        exiting: { 
+          width: '0%', 
+          opacity: '0', 
+          margin: '0px' 
+        },
       }}
       transitionTime={1000}
       >
@@ -72,16 +88,16 @@ class IndexPage extends Component {
   render() {
     return (
       <div className="site__panel-container">
-       <PageTransistionWrapper activeState={this.state.educator}>
-        <Link to="/educator" onClick={() => this.activatePanel('educator')} className="site__panel site__panel--educator">educator</Link>
-      </PageTransistionWrapper>
-      <PageTransistionWrapper activeState={this.state.programmer}>
-        <Link to="/programmer" onClick={() => this.activatePanel('programmer')} className="site__panel">programmer</Link>
-      </PageTransistionWrapper>
-      <PageTransistionWrapper activeState={this.state.adventurer}>
-        <Link to="/adventurer" onClick={() => this.activatePanel('adventurer')} className="site__panel">adventurer</Link>
-      </PageTransistionWrapper>
-    </div>
+        <PageTransistionWrapper activeState={this.state.educator} panelImage="https://imgur.com/JQ2G6a2.jpg">
+          <Link to="/educator" onClick={() => this.activatePanel('educator')} className="site__panel site__panel--educator">educator</Link>
+        </PageTransistionWrapper>
+        <PageTransistionWrapper activeState={this.state.programmer} panelImage="https://imgur.com/wXL6G5H.jpg">
+          <Link to="/programmer" onClick={() => this.activatePanel('programmer')} className="site__panel">programmer</Link>
+        </PageTransistionWrapper>
+        <PageTransistionWrapper activeState={this.state.adventurer} panelImage="https://i.imgur.com/ap3oVLB.jpg">
+          <Link to="/adventurer" onClick={() => this.activatePanel('adventurer')} className="site__panel">adventurer</Link>
+        </PageTransistionWrapper>
+      </div>
     )
   }
 }
