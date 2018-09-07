@@ -169,8 +169,18 @@ body {
   }
 }
 
+.site__contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 
-.icon {
-  height: 50px;
-  width: 50px;
+  .icon {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    margin-bottom: 0px;
+  }
 }
+
+
