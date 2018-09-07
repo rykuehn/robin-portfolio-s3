@@ -114,58 +114,63 @@ body {
           transform: rotate(360deg);
       }
     }
-  }
+    
+    .site__fortune_label {
+      position:relative;
+      width:308px;
+      height:66px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      -webkit-transition: transform 1.5s; /* Safari and Chrome */
+      transition: transform 1.5s;
+      transform-style:preserve-3d;
+      margin: 5px 0px 0px 35px;
+      border-radius: 5px;
   
-  .site__fortune_label {
-    position:relative;
-    width:308px;
-    height:66px;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    -webkit-transition: transform 1.5s; /* Safari and Chrome */
-    transition: transform 1.5s;
-    transform-style:preserve-3d;
-    margin: 5px 0px 0px 35px;
-    border-radius: 5px;
-
-    .site__fortune_label:hover {
-      -ms-transform: rotateY(-180deg); /* IE 9 */
-      -webkit-transform: rotateY(-180deg); /* Safari Chrome */
-      transform: rotateY(-180deg);
-    }
-    
-    .site__fortune_label--front {
-      font-size: 14px;
-      font-family: 'Roboto Slab', serif;
-      position: absolute;
-      width:308px;
-      height:66px;
-      background-color: white;
-      backface-visibility: hidden;
-      color: #8E354A;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 5px;
-    }
-    
-    .site__fortune_label--back {
-      border-radius: 5px;
-      font-family: 'Roboto Slab', serif;
-      background-color: white;
-      position: absolute;
-      width:308px;
-      height:66px;
-      backface-visibility: hidden;
-      text-align: center;
-      line-height: 7px;
-      font-size: 12px;
-      /* rotating the back face of the card */
-      -ms-transform: rotateY(-180deg); /* IE 9 */
-      -webkit-transform: rotateY(-180deg); /* Safari */
-      transform: rotateY(-180deg);
+      .site__fortune_label:hover {
+        -ms-transform: rotateY(-180deg); /* IE 9 */
+        -webkit-transform: rotateY(-180deg); /* Safari Chrome */
+        transform: rotateY(-180deg);
+      }
+      
+      .site__fortune_label--front {
+        font-size: 14px;
+        font-family: 'Roboto Slab', serif;
+        position: absolute;
+        width:308px;
+        height:66px;
+        background-color: white;
+        backface-visibility: hidden;
+        color: #8E354A;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+      }
+      
+      .site__fortune_label--back {
+        border-radius: 5px;
+        font-family: 'Roboto Slab', serif;
+        background-color: white;
+        position: absolute;
+        width:308px;
+        height:66px;
+        backface-visibility: hidden;
+        text-align: center;
+        line-height: 7px;
+        font-size: 12px;
+        /* rotating the back face of the card */
+        -ms-transform: rotateY(-180deg); /* IE 9 */
+        -webkit-transform: rotateY(-180deg); /* Safari */
+        transform: rotateY(-180deg);
+      }
     }
   }
 }
 
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
