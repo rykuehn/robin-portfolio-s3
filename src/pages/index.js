@@ -1,16 +1,47 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
-import fortunes from './fortunes.json';
+import PageTransition from 'gatsby-plugin-page-transitions';
 
 class IndexPage extends Component {
  render() {
    return (
      <div className="site__wrapper">
       <div className="index__wrapper">
+        <PageTransition
+        defaultStyle={{
+          transition: 'opacity 0.3s;',
+          width: '50%',
+          height: '100vh',
+          margin: '0 auto',
+          opacity: '1',
+        }}
+        transitionStyles={{
+          entering: { backgroundColor: 'red' },
+          entered: { backgroundColor: 'red' },
+          exiting: { opacity: '0' },
+        }}
+        transitionTime={1000}
+      >
         <div className="index__left">
           <div className="index__left-image">
           </div>
         </div>
+      </PageTransition>
+      <PageTransition
+        defaultStyle={{
+          transition: 'opacity 0.3s;',
+          width: '50%',
+          height: '100vh',
+          margin: '0 auto',
+          opacity: '1',
+        }}
+        transitionStyles={{
+          entering: { backgroundColor: '1' },
+          entered: { backgroundColor: '1' },
+          exiting: { opacity: '0' },
+        }}
+        transitionTime={1000}
+      >
         <div className="index__right">
           <div className="index__right-logo">
             <p> RL </p>
@@ -38,10 +69,12 @@ class IndexPage extends Component {
             </a>
           </div>
         </div>
+        </PageTransition>
       </div>
     </div>
+    
     );
  }
 }
 
-export default IndexPage
+export default IndexPage;
