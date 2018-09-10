@@ -11,21 +11,23 @@ class About extends Component {
           </div>
         </div>
         <div className="index__right">
-        <div className="link-wrapper">
+        <div className="secondary__link-wrapper">
         <Link className="link" to="/">Back to Home</Link>
         </div>
-          <div className="index__right-logo">
-            <p> RL </p>
-          </div>
-          <div className="index__right-description">
-            <p> 
-              Hey there! About page
-              </p>
-          </div>
+        <div className="watermark">
+          <h2 className="secondary__watermark"> About </h2>
+          <div className="secondary__watermark-shadow">a</div>
         </div>
+        <p className="secondary__subtitle">
+        Subtitle lalalalallaa
+        </p>
+        <p className="secondary__info">
+        lalaalla information that i dont want to write
+        </p>
       </div>
     </div>
-    );
+  </div>
+  );
  }
 }
 
