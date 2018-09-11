@@ -21,7 +21,7 @@ class IndexPage extends Component {
           </div>
           <div className="index__right-description">
             <p> 
-              Hey there! I'm <strong>Robin Lawrence</strong>, a software engineer located in the Bay Area. I am passionate about technology, education, and the intersection of the two.
+              Robin Lawrence is a software engineer at Capital One. Coming from a background in teaching, she has a unique perspective on how to make applications user-friendly and accessbile for everyone. Recently, she has been experimenting with making different kinds of granola from scratch!
               </p>
           </div>
           <div className="link-wrapper">
