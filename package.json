@@ -9,6 +9,9 @@
     "gatsby-plugin-page-transitions": "^1.0.7",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-remark-prettier": "^1.0.0",
+    "gatsby-transformer-remark": "^1.7.44",
+    "prettier": "^1.14.2",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
@@ -22,6 +25,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "gatsby-plugin-eslint": "^2.0.1",
     "prettier": "^1.13.7"
   },
   "repository": {

@@ -12,12 +12,11 @@
     text-align: center;
     height: 16px;
     font-size: 14px;
-    
 
     &:hover {
-      background: #3C7A89;
+      background: #3c7a89;
       color: white;
-      border: 1px solid #3C7A89;
+      border: 1px solid #3c7a89;
     }
   }
 }
@@ -25,7 +24,6 @@
 .watermark {
   position: relative;
 }
-
 
 .secondary__watermark {
   position: relative;
@@ -58,13 +56,12 @@
   }
 }
 
-
 .secondary__watermark-shadow {
   position: absolute;
-    font-size: 65px;
-    opacity: 0.1;
-    font-family: "Josefin Sans";
-    text-transform: uppercase;
-    left: -4px;
-    top: 9px;
+  font-size: 65px;
+  opacity: 0.1;
+  font-family: 'Josefin Sans';
+  text-transform: uppercase;
+  left: -4px;
+  top: 9px;
 }
