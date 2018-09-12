@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 class Work extends Component {
   render() {
     return (
-      <div className="site__wrapper">
+      <div className="site__wrapper  ">
         <div className="index__wrapper">
           <div className="index__left">
             <div className="index__left-image" />
