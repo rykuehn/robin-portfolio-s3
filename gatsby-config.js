@@ -3,8 +3,8 @@ module.exports = {
     title: "Robin Lawrence's Website",
   },
   plugins: [
-    'gatsby-plugin-react-helmet', 
-    'gatsby-plugin-sass', 
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     'gatsby-plugin-page-transitions',
     'gatsby-plugin-eslint',
     {
@@ -12,10 +12,8 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-prettier`
+            resolve: `gatsby-remark-prettier`,
           },
-          // any highlight plugin should be after
-          `gatsby-remark-prismjs`,
         ],
       },
     },
