@@ -19,10 +19,12 @@ class About extends Component {
               <h2 className="secondary__watermark"> About </h2>
               <div className="secondary__watermark-shadow">a</div>
             </div>
-            <p className="secondary__subtitle">Subtitle lalalalallaa</p>
-            <p className="secondary__info">
-              lalaalla information that i dont want to write
+            <p className="secondary__subtitle">
+              Robin Lawrence is a software engineer who uses her background in
+              education to think outside the box when it comes to building
+              user-friendly and accessible application for everyone.
             </p>
+            <p className="secondary__info" />
           </div>
         </div>
       </div>

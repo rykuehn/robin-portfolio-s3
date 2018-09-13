@@ -38,6 +38,7 @@ body {
       padding: 0 15px;
       background-color: white;
       font-family: 'Playfair Display', serif;
+      color: #16262e;
 
       .svg {
         width: 100%;
@@ -46,7 +47,7 @@ body {
         justify-content: center;
 
         > svg {
-          width: 36px;
+          width: 45px;
           height: 50px;
           margin: 0 11px;
 
@@ -67,12 +68,21 @@ body {
         }
       }
 
+      .github {
+        margin-top: 16px !important;
+      }
+
+      .download {
+        margin-top: 14px !important;
+      }
       &-description {
-        p {
-          width: 50%;
-          margin: 0 auto;
+        h1 {
+          margin-bottom: 20px;
+        }
+        * {
           text-align: center;
-          line-height: 18px;
+          margin: 0;
+          line-height: 30px;
         }
       }
 
@@ -81,18 +91,19 @@ body {
         display: flex;
         flex-direction: column;
         align-content: center;
-        margin: 30px auto;
+        margin: 20px auto;
         margin-bottom: 10px;
         font-family: 'Playfair Display', serif;
+        color: #16262e;
 
         .link {
           line-height: 15px;
-          color: black;
+          color: #16262e;
           text-decoration: none;
-          border: 1px solid black;
+          border: 1px solid #16262e;
           margin: 15px auto;
           padding: 15px;
-          width: 107px;
+          width: 130px;
           text-align: center;
           height: 16px;
           font-size: 14px;
@@ -112,22 +123,16 @@ body {
         margin: 0 auto;
 
         .icon {
-          width: 15px;
+          width: 20px;
           height: 15px;
           margin: 13px;
-          border: 1px solid black;
           padding: 5px;
-
-          &:hover {
-            background: #3c7a89;
-            border: 1px solid #3c7a89;
-
-            svg {
-              fill: white;
-            }
-          }
         }
       }
     }
   }
+}
+
+.secondary__subtitle {
+  font-style: italic;
 }
